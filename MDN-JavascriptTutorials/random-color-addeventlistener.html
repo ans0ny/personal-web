@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Random color example — event handler attribute</title>
+    <style>
+      button {
+        margin: 10px;
+		padding: 10px;
+		border: none;
+		border-radius: 10px;
+      };
+    </style>
+  </head>
+  <body>
+    <button>Change color</button>
+	<button id="focusButton">Change color: on focus</button>
+    <script>
+      const btn = document.querySelector('button');
+	  const focusBtn = document.querySelector('#focusButton');
+
+      function random(number) {
+        return Math.floor(Math.random() * (number+1));
+      }
+
+      btn.addEventListener('click', () => {
+        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+      });
+	  
+	  focusBtn.addEventListener('focus', () => {
+        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+      });
+    </script>
+  </body>
+</html>

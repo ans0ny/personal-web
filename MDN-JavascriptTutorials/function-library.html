@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
+<body>
+
+  <input class="numberInput" type="text">
+  <p></p>
+
+  <script>
+    const input = document.querySelector('.numberInput');
+    const para = document.querySelector('p');
+    
+	function squared(num) {
+	  return num * num;
+	}
+	
+	function cubed(num) {
+	  return num * num * num;
+	}
+	
+	function factorial(num) {
+	  if (num < 0) return undefined;
+	  if (num === 0) return 1;
+	  let x = num - 1;
+	  while (x > 1) {
+	    num *= x;
+		x--;
+      }
+	  return num;
+	}
+	
+	function kgToPounds(num) {
+	  return num * 2.204623;
+	}
+	
+	function circumferenceToDiameter(num) {
+	  return 2 * (num / (2 * 3.14));
+	}
+	
+	input.addEventListener("change", () => {
+	  const num = parseFloat(input.value);
+	  if (isNaN(num)) {
+	    para.textContent = "You need to enter a number!";
+	  } else {
+	    para.textContent = `${num} squared is ${squared(num)}. `;
+		para.textContent += `${num} cubed is ${cubed(num)}. `;
+		para.textContent += `${num} factorial is ${factorial(num)}. `;
+		para.textContent += `If the circumference of a circle is ${num}, then the diameter is ${circumferenceToDiameter(num)}. `;
+		para.textContent += `${num} kilograms is ${kgToPounds(num)} pounds. `;
+	  }
+	});
+	
+// const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+//const para = document.createElement('p');
+
+// Add your code here, assessment funcions 3
+function random(min, max) {
+  const num = Math.floor(Math.random() * (max - min)) + min;
+  return num;
+}
+
+function chooseName() {
+  const aName = names[random(0, names.length)];
+  para.textContent = `${aName}`;
+}
+
+chooseName();
+// const shortNames = names.filter( (name) => name.length < 5);
+// Don't edit the code below here!
+
+// section.innerHTML = ' ';
+
+// section.appendChild(para);
+
+// deg
+function degToRad(degrees) {
+    return (degrees * Math.PI) / 180;
+  }
+  
+  </script>
+</body>
+</html>

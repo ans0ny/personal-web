@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'gravitas_oneregular';
+    src: url('fonts2/gravitasone-webfont.woff2') format('woff2'),
+         url('fonts2/gravitasone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('fonts2/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts2/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+html {
+  font-family: 'montserratregular', serif;
+  font-size: 10px;
+}
+
+h1,
+h2 {
+  font-family: 'gravitas_oneregular', sans-serif;
+  font-size: 4.8em;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.6em;
+}
+
+p,
+ul li,
+ol li {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  letter-spacing: .1rem;
+}
+
+ul,
+ol {
+	padding: 10px 0 10px 0;
+}
+
+ul {
+	list-style: square;
+}
+
+ol {
+	list-style: upper-roman;
+}
+
+section h2 + p {
+	text-indent: 20px;
+}
+
+a {
+	outline: none;
+}
+
+a:link {
+	color: #9E5757;
+}
+
+a:visited {
+	color: #0F4C5C;
+}
+
+a:hover {
+	color: #45062E;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #B3B7EE;
+	text-decoration: none;
+}
+
+a:active {
+	color: red;
+	font-weight: bold;
+}
+
+a[href^="http"]{
+	background: url(external-link-52.png) no-repeat 100% 0;
+	background-size: 14px 14px;
+	padding-right: 20px;
+}
+
+nav li {
+	list-style: none;
+	text-align: center;
+	font-size: 2rem;
+	padding: 20px;
+	margin: 10px 0 10px 0;
+	border: 2px solid black;
+}

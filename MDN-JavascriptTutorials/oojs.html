@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+    
+    <script>
+      const person = {
+	    name: {
+		  first: "Bob",
+		  last: "Smith",
+		},
+		age: 32,
+		bio() {
+		  console.log(`${this.name.first} ${this.name.last} is ${this.age} years old.`);
+		},
+	    introduceSelf() {
+		   console.log(`Hi! I'm ${this.name[0]}.`);
+		},
+	  };
+	  //Object assessment 2
+	  let bandInfo;
+
+// Put your code here
+let radiohead = {
+  name: "Radiohead",
+  nationality: "United Kingdom",
+  genre: "Alt Rock",
+  members: 5,
+  formed: 1985,
+  split: false,
+  albums: 
+    [{name: "Pablo Honey", released: 1993,},
+      {name: "The Bends", released: 1995,}],
+};
+bandInfo = `${radiohead.name} is a band from ${radiohead.nationality} formed in ${radiohead.formed}. Their music genre is ${radiohead.genre}. Their first album, ${radiohead.albums[0].name}, was released in ${radiohead.albums[0].released}.`;
+// Don't edit the code below here
+
+let para1 = document.createElement('p');
+para1.textContent = bandInfo;
+section.appendChild(para1);
+    
+	
+	// oop javascript 1
+	class Shape {
+
+  name;
+  sides;
+  sideLength;
+
+  constructor(name, sides, sideLength){
+    this.name = name;
+    this.sides = sides;
+    this.sideLength = sideLength;
+  }
+
+  calcPerimeter(){
+    const perimeter = this.sides * this.sideLength;
+    console.log(perimeter);
+  }
+
+}
+const square = new Shape("square", 4, 5);
+square.calcPerimeter();
+
+const triangle = new Shape("triangle", 3, 3);
+triangle.calcPerimeter();
+    </script>
+  </body>
+
+</html>

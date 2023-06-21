@@ -9,7 +9,8 @@ Personal website (Not maintainted much): [https://s0ny.neocities.org/]
 * Good Web Design
 * Sass
 * TypeScript
-* Tooling
+* Tooling and Packaging
+* Git
 * Possible backend
 
 ## What I do know
@@ -18,3 +19,4 @@ Personal website (Not maintainted much): [https://s0ny.neocities.org/]
 * CSS
 * Basic Javascript
 * Some real website fixing
+* The tutorials from MDN (HTML, CSS, Javascript)
