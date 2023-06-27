@@ -5,6 +5,7 @@ I have been learning from early 2023. I have a fulltime job so the work is maybe
 [Personal website (Not maintainted much)](https://s0ny.neocities.org/)
 
 Also maintaining a [Javascript focused repo.](https://github.com/ans0ny/javascriptplayground)
+
 ## Things to learn
 
 * Javascript Framework (Vue or React or Svelte?)
