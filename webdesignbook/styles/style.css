@@ -78,7 +78,7 @@ img {
     padding-top: 15%;
 }
 
-.home-content-text * {
+.home-content-text h2 {
     display: inline-block;
     padding: 10px 10px;
     background-color: rgba(255,255,255,0.7);
@@ -86,7 +86,12 @@ img {
 
 .home-content p {
     font-size: 2rem;
-    margin: 10px 0 42px;
+    margin: 15px 0 42px;
+}
+
+.home-content p span {
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px;
 }
 
 /* Page Title */
